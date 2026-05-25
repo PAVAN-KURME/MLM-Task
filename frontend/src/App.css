@@ -1,0 +1,42 @@
+.app-shell {
+  min-height: 100vh;
+  background: #eef2ff;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #eef2ff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111827;
+}
+
+.card,
+.auth-card,
+.investment-modal,
+.referral-tree,
+.table-responsive .table {
+  border-radius: 20px;
+}
+
+.text-muted {
+  color: #6b7280 !important;
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    background: #f8fafc;
+  }
+}

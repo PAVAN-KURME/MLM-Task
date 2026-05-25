@@ -1,0 +1,22 @@
+.auth-page {
+  min-height: 100vh;
+}
+
+.auth-card {
+  background: #fff;
+  border-radius: 24px;
+}
+
+.auth-card .form-control {
+  border-radius: 12px;
+}
+
+.auth-card .input-group .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.auth-card .input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

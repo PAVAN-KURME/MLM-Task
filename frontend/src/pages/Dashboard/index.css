@@ -1,0 +1,103 @@
+.dashboard-page {
+  & .card {
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(123, 30, 45, 0.08), 0 2px 8px rgba(123, 30, 45, 0.04);
+    border: 1px solid rgba(123, 30, 45, 0.05);
+
+    @media (max-width: 1200px) {
+      border-radius: 16px;
+    }
+
+    @media (max-width: 768px) {
+      border-radius: 14px;
+    }
+  }
+}
+
+.chart-card {
+  background: linear-gradient(135deg, #fff 0%, rgba(251, 250, 248, 0.3) 100%);
+  border: 1px solid rgba(123, 30, 45, 0.06);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 12px 32px rgba(123, 30, 45, 0.12), 0 4px 12px rgba(123, 30, 45, 0.08);
+  }
+
+  & .card-header {
+    border-bottom: 1px solid rgba(123, 30, 45, 0.06);
+    background: transparent;
+    padding: 1.25rem 1.5rem 1rem;
+
+    & h5 {
+      color: var(--brand-maroon-dark);
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0;
+
+      @media (max-width: 1200px) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      padding: 1rem 1.25rem 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0.9rem 1rem 0.8rem;
+    }
+  }
+
+  & .card-body {
+    min-height: 320px;
+    padding: 1.5rem;
+
+    @media (max-width: 1200px) {
+      min-height: 300px;
+      padding: 1.25rem;
+    }
+
+    @media (max-width: 768px) {
+      min-height: 260px;
+      padding: 1rem;
+    }
+
+    @media (max-width: 576px) {
+      min-height: 240px;
+      padding: 0.75rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    border-radius: 14px;
+  }
+}
+
+.chart-container {
+  width: 100%;
+  min-height: 320px;
+
+  @media (max-width: 1200px) {
+    min-height: 300px;
+  }
+
+  @media (max-width: 992px) {
+    min-height: 280px;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 260px;
+  }
+
+  @media (max-width: 576px) {
+    min-height: 240px;
+  }
+}

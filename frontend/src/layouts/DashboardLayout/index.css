@@ -1,0 +1,43 @@
+.dashboard-shell {
+  display: block;
+  min-height: 100vh;
+  background: var(--bg);
+
+  @media (max-width: 992px) {
+    background: #fff;
+  }
+}
+
+.dashboard-main {
+  margin-left: var(--sidebar-width, 300px);
+  padding: calc(var(--topbar-height, 72px) + 1.5rem) 1.5rem 1.5rem;
+  min-height: calc(100vh - var(--topbar-height, 72px));
+
+  @media (max-width: 1200px) {
+    margin-left: 260px;
+    padding: calc(var(--topbar-height, 72px) + 1.25rem) 1.25rem 1.25rem;
+  }
+
+  @media (max-width: 992px) {
+    margin-left: 0;
+    padding: calc(var(--topbar-height, 72px) + 1rem) 1rem 1rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: calc(var(--topbar-height, 72px) + 0.75rem) 0.75rem 0.75rem;
+  }
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media (max-width: 992px) {
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 576px) {
+    gap: 1rem;
+  }
+}

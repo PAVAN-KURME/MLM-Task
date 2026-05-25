@@ -1,0 +1,162 @@
+.investments-page {
+  & h3 {
+    font-weight: 700;
+    color: var(--brand-maroon-dark);
+
+    @media (max-width: 992px) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.25rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  & p {
+    @media (max-width: 576px) {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.investments-table {
+  & .table {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(123, 30, 45, 0.05);
+
+    @media (max-width: 768px) {
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 0.85rem;
+
+      & thead th {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.8rem;
+      }
+
+      & tbody td {
+        padding: 0.75rem 0.5rem;
+      }
+    }
+  }
+
+  & .badge {
+    text-transform: capitalize;
+    font-size: 0.85rem;
+
+    @media (max-width: 576px) {
+      font-size: 0.75rem;
+      padding: 0.35rem 0.65rem;
+    }
+  }
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    background: rgba(15, 23, 42, 0.6);
+    padding: 1rem;
+  }
+}
+
+.investment-modal {
+  width: min(560px, calc(100% - 2rem));
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 1200px) {
+    width: min(500px, calc(100% - 1.5rem));
+  }
+
+  @media (max-width: 768px) {
+    width: min(100%, calc(100% - 1rem));
+    border-radius: 14px;
+  }
+
+  @media (max-width: 576px) {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  & .btn-close {
+    font-size: 1.1rem;
+
+    @media (max-width: 576px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.filters-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  & .form-select,
+  & .form-control {
+    min-width: 160px;
+    border-radius: 10px;
+    border: 1px solid rgba(123, 30, 45, 0.1);
+    font-size: 0.95rem;
+
+    &:focus {
+      border-color: var(--brand-maroon);
+      box-shadow: 0 0 0 3px rgba(123, 30, 45, 0.1);
+    }
+
+    @media (max-width: 1200px) {
+      min-width: 140px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 992px) {
+      min-width: 130px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      min-width: unset;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 0.85rem;
+      padding: 0.6rem 0.8rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    gap: 0.85rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,79 @@
+﻿:root {
+  /* Brand colors (maroon theme + natural palette) */
+  --brand-maroon: #7b1e2d;
+  --brand-maroon-dark: #5b1520;
+  --brand-accent: #b23a48;
+  --bg: #fbfaf8; /* warm natural background */
+  --surface: #ffffff;
+  --muted: #6b7280;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --neutral-800: #111827;
+  --card-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+
+  --brand-100: #fef2f2;
+  --brand-200: #fee2e2;
+  --brand-300: #fecaca;
+  --brand-400: #fca5a5;
+  --brand-500: #f87171;
+  --brand-600: #ef4444;
+  --brand-700: #dc2626;
+  --brand-800: #b91c1c;
+  --brand-900: #991b1b; 
+
+  /* Typography scale */
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --h1-size: 2rem; /* 32px */
+  --h2-size: 1.5rem; /* 24px */
+  --h3-size: 1.125rem; /* 18px */
+  --base-size: 1rem; /* 16px */
+  --lead-size: 1.0625rem; /* 17px */
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; margin: 0; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--neutral-800);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility typography classes */
+.heading-1 { font-size: var(--h1-size); line-height: 1.15; margin: 0 0 0.5rem; font-weight: 700; color: var(--brand-maroon-dark); }
+.heading-2 { font-size: var(--h2-size); line-height: 1.2; margin: 0 0 0.5rem; font-weight: 700; color: var(--brand-maroon); }
+.heading-3 { font-size: var(--h3-size); line-height: 1.25; margin: 0 0 0.5rem; font-weight: 600; color: var(--neutral-800); }
+.lead { font-size: var(--lead-size); color: var(--muted); margin: 0 0 1rem; }
+.text-muted { color: var(--muted) !important; }
+
+/* Spacing helpers */
+.mt-1 { margin-top: 0.25rem !important; }
+.mt-2 { margin-top: 0.5rem !important; }
+.mt-3 { margin-top: 1rem !important; }
+.mb-1 { margin-bottom: 0.25rem !important; }
+.mb-2 { margin-bottom: 0.5rem !important; }
+.mb-3 { margin-bottom: 1rem !important; }
+
+/* Cards and surfaces */
+.card { background: var(--surface); border-radius: 12px; box-shadow: var(--card-shadow); }
+.btn-brand { background: linear-gradient(180deg, var(--brand-accent), var(--brand-maroon)); color: #fff; border: none; }
+.btn-outline-brand { border: 1px solid var(--brand-maroon); color: var(--brand-maroon); background: transparent; }
+
+/* Recharts styling */
+.recharts-cartesian-axis-line { stroke: rgba(123, 30, 45, 0.1); }
+.recharts-cartesian-axis-tick-value { fill: var(--muted); font-size: 12px; }
+.recharts-default-tooltip { border-radius: 8px; box-shadow: 0 4px 12px rgba(123, 30, 45, 0.15); }
+.recharts-tooltip-label { color: var(--neutral-800); font-weight: 600; }
+.recharts-legend-wrapper { padding-top: 1rem !important; }
+.recharts-legend-item-text { color: var(--neutral-800) !important; font-weight: 500 !important; }
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+  .heading-1 { font-size: 1.6rem; }
+  .heading-2 { font-size: 1.25rem; }
+}
+

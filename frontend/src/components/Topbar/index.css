@@ -1,0 +1,83 @@
+.topbar {
+  --topbar-height: 72px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: var(--sidebar-width, 300px);
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.04));
+  padding: 0 1.25rem;
+  z-index: 900;
+  border-bottom: 1px solid rgba(123, 30, 45, 0.05);
+
+  & h2 {
+    margin-bottom: 0;
+    font-size: 1.15rem;
+    color: var(--brand-maroon-dark);
+    font-weight: 700;
+
+    @media (max-width: 1200px) {
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 1rem;
+    }
+  }
+
+  & .text-muted {
+    color: var(--muted);
+    font-size: 0.9rem;
+
+    @media (max-width: 992px) {
+      font-size: 0.85rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    left: 260px;
+    padding: 0 1rem;
+  }
+
+  @media (max-width: 992px) {
+    left: 0;
+    padding: 0 1rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0 0.75rem;
+    height: 64px;
+    --topbar-height: 64px;
+  }
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+
+  & .btn {
+    min-width: 42px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+
+    @media (max-width: 992px) {
+      min-width: 38px;
+      padding: 0.4rem 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 576px) {
+      min-width: 36px;
+      padding: 0.35rem 0.5rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    gap: 0.25rem;
+  }
+}
